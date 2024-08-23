@@ -1,5 +1,5 @@
 # Pull base image.
-FROM java:7-jre
+FROM openjdk:8
 
 ENV ES_PKG_NAME elasticsearch-1.5.2
 
