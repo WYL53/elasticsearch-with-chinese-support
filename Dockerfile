@@ -21,6 +21,10 @@ ADD plugins /elasticsearch/plugins
 # Define working directory.
 WORKDIR /data
 
+# 设置环境变量，用于启动时配置账户和密码
+ENV ELASTIC_USERNAME="elastic"
+ENV ELASTIC_PASSWORD="changeme"
+
 # Define default command.
 CMD ["/elasticsearch/bin/elasticsearch"]
 
